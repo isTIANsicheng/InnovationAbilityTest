@@ -1,0 +1,103 @@
+dimension,prompt
+summary_prompt,"你是一位专业的创新思维评估专家，现在需要为学生ID: $STUDENT_ID$ 生成一份综合全面的创新思维能力评估报告。
+
+该学生在三个创新思维维度的得分和可信度如下：
+- 灵活性(Flexibility): $FLEXIBILITY_SCORE$/10 (可信度: $FLEXIBILITY_CONFIDENCE$)
+- 流畅性(Fluency): $FLUENCY_SCORE$/10 (可信度: $FLUENCY_CONFIDENCE$)
+- 有效性(Effectiveness): $EFFECTIVENESS_SCORE$/10 (可信度: $EFFECTIVENESS_CONFIDENCE$)
+- 综合得分: $OVERALL_SCORE$/10 (综合可信度: $OVERALL_CONFIDENCE$)
+
+学生在各维度的学习趋势：
+- 灵活性维度趋势: $FLEXIBILITY_TREND$
+- 流畅性维度趋势: $FLUENCY_TREND$
+- 有效性维度趋势: $EFFECTIVENESS_TREND$
+
+学生在各维度的分数轨迹：
+- 灵活性分数轨迹: $FLEXIBILITY_TRAJECTORY$
+- 流畅性分数轨迹: $FLUENCY_TRAJECTORY$
+- 有效性分数轨迹: $EFFECTIVENESS_TRAJECTORY$
+
+以下是学生与评估系统的完整对话历史摘要：
+$CONVERSATION_SUMMARY$
+
+以下是学生的成功/失败反馈记录：
+$FEEDBACK_SUMMARY$
+
+以下是学生关键问题回答分析：
+$KEY_RESPONSES$
+
+学习轨迹分析：
+$LEARNING_TRAJECTORY$
+
+请根据以上全面的评估数据，撰写一份详细的创新思维评估报告，该报告必须包含以下内容：
+
+1. 执行摘要
+   - 总体表现概述
+   - 最主要的优势与不足
+
+2. 维度分析（针对灵活性、流畅性和有效性）
+   - 每个维度的表现水平和特点
+   - 各维度强弱项分析
+   - 维度发展趋势分析
+
+3. 学习过程分析
+   - 整个评估过程中的表现变化
+   - 对关键问题的响应质量
+   - 解决问题的思路和方法特点
+
+4. 创新思维特征分析
+   - 学生创新思维的优势特征（至少3点）
+   - 学生创新思维的劣势或不足（至少3点）
+   - 创新思维模式和风格
+
+5. 针对性改进建议
+   - 针对每个维度的具体、可行的提升建议（每个维度至少2条）
+   - 适合该学生的创新思维训练方法
+
+6. 教学培养建议
+   - 为教师提供的针对性指导建议
+   - 适合该学生的教学方法和资源
+
+请确保报告内容丰富、具体、个性化，基于评估过程中收集的所有数据进行分析，而不仅仅是最后一轮对话。报告应该突出学生的个性特点，并提供真正有用的、针对性的建议。"
+feedback_analysis,"你是一位创新思维教育专家，现在需要分析学生ID: $STUDENT_ID$ 在创新思维评估中的表现，特别关注各维度的成功和失败反馈记录。
+
+该学生在三个创新思维维度的得分如下：
+- 灵活性(Flexibility): $FLEXIBILITY_SCORE$/10
+- 流畅性(Fluency): $FLUENCY_SCORE$/10
+- 有效性(Effectiveness): $EFFECTIVENESS_SCORE$/10
+- 综合得分: $OVERALL_SCORE$/10
+
+学习趋势分析：
+$LEARNING_TRENDS$
+
+灵活性维度对话历史：
+$FLEXIBILITY_DIALOGUES$
+
+流畅性维度对话历史：
+$FLUENCY_DIALOGUES$
+
+有效性维度对话历史：
+$EFFECTIVENESS_DIALOGUES$
+
+请基于以上信息，对学生的创新思维能力进行全面分析，着重关注以下几点：
+
+1. 各维度表现特点分析
+   - 哪些维度表现较好，体现在哪些方面
+   - 哪些维度表现较弱，体现在哪些方面
+   - 对评估过程中的重要问题和关键回答进行分析
+
+2. 学习能力特征
+   - 学生在面对挑战时的反应模式
+   - 学习进步的速度和稳定性
+   - 对引导的接受程度和应用能力
+
+3. 创新思维核心特征
+   - 学生创新思维的优势特点（至少3点）
+   - 学生创新思维的弱点或障碍（至少3点）
+   - 创新思维方式和风格
+
+4. 针对性改进建议
+   - 针对每个维度的具体、可行的提升建议（每个维度至少2条）
+   - 适合该学生的创新思维训练方法和资源推荐
+
+请确保分析深入、具体、个性化，注重实用性建议，避免笼统或泛泛而谈。"
